@@ -6,6 +6,7 @@
 */
 
 import { useEffect, useState } from "react";
+import { useLocation } from "wouter";
 import { motion } from "framer-motion";
 import { Check, Phone, Mail, MapPin, Building2, Calculator, FileText, Copyright, ShoppingCart, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -20,6 +21,7 @@ import SEO from "@/components/SEO";
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
+  const [, navigate] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -148,30 +150,37 @@ src="/images/hero-executive.webp"
       {/* Units Map Section */}
       <section id="unidades" className="py-20 bg-white">
         <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4" style={{ fontFamily: 'Montserrat' }}>
-              Conheça todas as nossas unidades espalhadas pelo Brasil!
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Clique em uma unidade no mapa e conheça mais.
-            </p>
-          </motion.div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6" style={{ fontFamily: 'Montserrat' }}>
+                Conheça todas as nossas unidades espalhadas pelo Brasil!
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                Clique em um estado no mapa e conheça mais sobre nossas unidades. Estamos presentes nas principais capitais do país, oferecendo endereço fiscal e escritório virtual para sua empresa.
+              </p>
+              <Button
+                size="lg"
+                className="bg-navy hover:bg-navy/90 text-white font-semibold"
+                onClick={() => navigate("/escritorio-virtual")}
+              >
+                VER TODAS AS UNIDADES
+              </Button>
+            </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="max-w-4xl mx-auto"
-          >
-            <BrazilMap />
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <BrazilMap />
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -347,7 +356,7 @@ src="/images/inclusive-workspace.webp"
               <img
 src="/images/partnership-professional.webp"
                   alt="Profissional parceira"
-                  className="rounded-3xl shadow-xl w-full h-auto"
+                  className="rounded-3xl shadow-xl w-full h-auto max-h-[400px] object-cover"
                   loading="lazy"
                 />
             </motion.div>
@@ -369,7 +378,7 @@ src="/images/partnership-professional.webp"
               <img
 src="/images/social-entrepreneur.webp"
                   alt="Empreendedor social"
-                  className="rounded-3xl shadow-xl w-full h-auto"
+                  className="rounded-3xl shadow-xl w-full h-auto max-h-[400px] object-cover"
                   loading="lazy"
                 />
             </motion.div>

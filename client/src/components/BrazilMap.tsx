@@ -255,32 +255,6 @@ export default function BrazilMap({ className, onUnitClick }: BrazilMapProps) {
           <span className="text-gray-600">Em breve</span>
         </div>
       </div>
-
-      {/* State Units Info */}
-      <div className="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {statesWithUnits.map((stateCode) => {
-          const stateUnits = unitsByState[stateCode];
-          const stateName = stateUnits[0]?.state || stateCode;
-          return (
-            <button
-              key={stateCode}
-              onClick={() => handleStateClick(stateCode)}
-              className={`p-3 rounded-lg border-2 transition-all text-left hover:shadow-md ${
-                selectedState === stateCode
-                  ? "border-navy bg-navy/5"
-                  : "border-gray-200 hover:border-navy/50"
-              }`}
-            >
-              <p className="font-semibold text-navy text-sm" style={{ fontFamily: "Montserrat" }}>
-                {stateName}
-              </p>
-              <p className="text-xs text-gray-500">
-                {stateUnits.length} {stateUnits.length === 1 ? "unidade" : "unidades"}
-              </p>
-            </button>
-          );
-        })}
-      </div>
     </div>
   );
 }

@@ -227,7 +227,7 @@ export default function PorQueAthena() {
               <img
                 src="/images/partnership-professional.webp"
                 alt="Profissional parceira"
-                className="rounded-3xl shadow-xl w-full h-auto"
+                className="rounded-3xl shadow-xl w-full h-auto max-h-[400px] object-cover"
                 loading="lazy"
               />
             </motion.div>

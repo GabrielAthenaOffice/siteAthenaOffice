@@ -78,7 +78,7 @@ export default function QuemSomos() {
               <img
                 src="/images/partnership-professional.webp"
                 alt="Profissional Athena Office"
-                className="rounded-3xl shadow-xl w-full h-auto"
+                className="rounded-3xl shadow-xl w-full h-auto max-h-[400px] object-cover"
                 loading="lazy"
               />
             </motion.div>
