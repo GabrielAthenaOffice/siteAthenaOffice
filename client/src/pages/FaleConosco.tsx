@@ -66,11 +66,10 @@ export default function FaleConosco() {
             className="text-center mb-12"
           >
             <h1 className="text-4xl md:text-5xl font-bold text-navy mb-6" style={{ fontFamily: 'Montserrat' }}>
-              Fale Conosco
+              Preencha o formulário
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Estamos aqui para ajudar! Entre em contato conosco e descubra como a Athena Office 
-              pode transformar a maneira como você faz negócios.
+              Quer receber alguma resposta em pouco tempo? Preencha o formulário abaixo e aguarde que chegará uma mensagem para você!
             </p>
           </motion.div>
 
@@ -81,6 +80,15 @@ export default function FaleConosco() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
+              <div className="mb-8">
+                <h1 className="text-4xl md:text-5xl font-bold text-navy mb-4" style={{ fontFamily: 'Montserrat' }}>
+                  Fale Conosco
+                </h1>
+                <p className="text-lg text-muted-foreground">
+                  Estamos aqui para ajudar! Entre em contato conosco e descubra como a Athena Office 
+                  pode transformar a maneira como você faz negócios.
+                </p>
+              </div>
               <Card>
                 <CardContent className="p-8">
                   <h2 className="text-2xl font-bold text-navy mb-6" style={{ fontFamily: 'Montserrat' }}>
