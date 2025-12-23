@@ -5,6 +5,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useLocation } from "wouter";
 import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -18,8 +19,14 @@ interface Unit {
   city: string;
 }
 
+// Map of cities to their URL slugs (only implemented pages)
+const citySlugMap: Record<string, string> = {
+  "Rio de Janeiro": "rio-de-janeiro",
+};
+
 export default function EscritorioVirtual() {
   const [activeRegion, setActiveRegion] = useState("sudeste");
+  const [, navigate] = useLocation();
 
   const units = {
     sudeste: [
@@ -71,6 +78,16 @@ export default function EscritorioVirtual() {
     { id: "norte", label: "Norte" },
   ];
 
+  const handleViewPlans = (unit: Unit) => {
+    const slug = citySlugMap[unit.city];
+    if (slug) {
+      navigate(`/escritorio-virtual/${slug}`);
+    } else {
+      // For units without dedicated pages yet, show contact info
+      alert(`Para informações sobre a unidade ${unit.city}, entre em contato: 0800 0800 003`);
+    }
+  };
+
   const UnitCard = ({ unit }: { unit: Unit }) => (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -91,7 +108,10 @@ export default function EscritorioVirtual() {
               </h3>
             </div>
           </div>
-          <Button className="w-full bg-navy hover:bg-navy/90 text-white font-semibold">
+          <Button 
+            onClick={() => handleViewPlans(unit)}
+            className="w-full bg-navy hover:bg-navy/90 text-white font-semibold"
+          >
             VER PLANOS
           </Button>
         </CardContent>
