@@ -184,15 +184,7 @@ export default function FaleConosco() {
                 </div>
               </div>
 
-              {/* Image */}
-              <div className="rounded-3xl overflow-hidden shadow-xl">
-                <img
-                  src="/images/office-modern.webp"
-                  alt="Escritório moderno Athena Office"
-                  className="w-full h-auto"
-                  loading="lazy"
-                />
-              </div>
+
             </motion.div>
           </div>
         </div>

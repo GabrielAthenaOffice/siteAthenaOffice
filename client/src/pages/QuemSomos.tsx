@@ -76,8 +76,8 @@ export default function QuemSomos() {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <img
-                src="/images/partnership-professional.webp"
-                alt="Profissional Athena Office"
+                src="/images/office-modern.webp"
+                alt="Escritório moderno Athena Office"
                 className="rounded-3xl shadow-xl w-full h-auto max-h-[400px] object-cover"
                 loading="lazy"
               />

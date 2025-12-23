@@ -109,7 +109,7 @@ export default function Home() {
                 <Button
                   size="lg"
                   className="bg-navy hover:bg-navy/90 text-white font-semibold"
-                  onClick={() => document.getElementById('unidades')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => navigate("/escritorio-virtual")}
                 >
                   CONHECER UNIDADES
                 </Button>
@@ -268,7 +268,7 @@ src="/images/inclusive-workspace.webp"
               <Button
                 size="lg"
                 className="bg-navy hover:bg-navy/90 text-white font-semibold"
-                onClick={() => document.getElementById('unidades')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => navigate("/escritorio-virtual")}
               >
                 CONHECER UNIDADES
               </Button>
