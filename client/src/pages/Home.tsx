@@ -339,12 +339,18 @@ src="/images/inclusive-workspace.webp"
               <p className="text-lg mb-8">
                 Seja um parceiro, receba renda passiva, indique nossos planos de Escritório Virtual.
               </p>
-              <Button
-                size="lg"
-                className="bg-white text-navy hover:bg-green hover:text-white font-semibold transition-smooth"
+              <a 
+                href="https://api.whatsapp.com/send?phone=5511993685792&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20tenho%20interesse%20em%20ser%20um%20parceiro!"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Quero ser parceiro
-              </Button>
+                <Button
+                  size="lg"
+                  className="bg-white text-navy hover:bg-green hover:text-white font-semibold transition-smooth"
+                >
+                  Quero ser parceiro
+                </Button>
+              </a>
             </motion.div>
 
             <motion.div
@@ -449,7 +455,7 @@ src="/images/social-entrepreneur.webp"
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/558000800003"
+        href="https://api.whatsapp.com/send/?phone=5511993685792&text=Ol%C3%A1%2C+tenho+interesse+em+conhecer+os+servi%C3%A7os+da+Athena+Office.&type=phone_number&app_absent=0"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-40 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg transition-smooth"

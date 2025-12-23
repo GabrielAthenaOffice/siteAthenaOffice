@@ -210,12 +210,18 @@ export default function PorQueAthena() {
               <p className="text-lg mb-8">
                 Seja um parceiro, receba renda passiva, indique nossos planos de Escritório Virtual.
               </p>
-              <Button
-                size="lg"
-                className="bg-white text-navy hover:bg-green hover:text-white font-semibold transition-smooth"
+              <a 
+                href="https://api.whatsapp.com/send?phone=5511993685792&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20tenho%20interesse%20em%20ser%20um%20parceiro!"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Quero ser parceiro
-              </Button>
+                <Button
+                  size="lg"
+                  className="bg-white text-navy hover:bg-green hover:text-white font-semibold transition-smooth"
+                >
+                  Quero ser parceiro
+                </Button>
+              </a>
             </motion.div>
 
             <motion.div
