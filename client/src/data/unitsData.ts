@@ -96,7 +96,7 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.9!2d-43.9344!3d-19.9384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDU2JzE4LjIiUyA0M8KwNTYnMDMuOCJX!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: "35,00",
+        price: "19,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
@@ -140,13 +140,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.1!2d-49.2844!3d-25.4414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDI2JzI5LjAiUyA0OcKwMTcnMDMuOCJX!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "49,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "69,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -162,13 +162,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.1!2d-48.5244!3d-27.5914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDM1JzI5LjAiUyA0OMKwMzEnMjcuOCJX!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "69,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "89,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -184,13 +184,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.1!2d-51.2044!3d-30.0314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAxJzUyLjQiUyA1McKwMTInMTUuOCJX!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "58,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "69,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -206,13 +206,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.1!2d-37.0544!3d-10.9314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDU1JzUzLjQiUyAzN8KwMDMnMTUuOCJX!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "58,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "59,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -228,13 +228,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.1!2d-35.8844!3d-7.2214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMTMnMTcuMCJTIDM1wrA1MycwMy44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "58,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "110,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -250,13 +250,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.1!2d-38.4944!3d-3.7314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwNDMnNTMuNCJTIDM4wrAyOScwMy44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "58,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "80,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -272,13 +272,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.1!2d-34.9144!3d-8.1714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMTAnMTcuMCJTIDM0wrA1NCc1MS44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "49,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "65,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -294,13 +294,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.1!2d-34.8344!3d-7.0914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDUnMjkuMCJTIDM0wrA1MCcwMy44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "65,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "79,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -316,13 +316,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.1!2d-35.7044!3d-9.6614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMzknNDEuMCJTIDM1wrA0MicxNS44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "58,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "84,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -338,13 +338,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.1!2d-35.2144!3d-5.8214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNDknMTcuMCJTIDM1wrAxMic1MS44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "58,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "80,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -360,13 +360,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.1!2d-34.8944!3d-8.1214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMDcnMTcuMCJTIDM0wrA1Myc0MC4wIlc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "22,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "65,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -382,13 +382,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.1!2d-38.4544!3d-12.9814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzUzLjQiUyAzOMKwMjcnMTUuOCJX!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "25,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "45,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -404,13 +404,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.1!2d-44.2544!3d-2.5114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMzAnNDEuMCJTIDQ0wrAxNScxNS44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "58,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "90,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -426,13 +426,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.1!2d-42.7944!3d-5.0914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMDUnMjkuMCJTIDQywrA0Nyc0MC4wIlc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "58,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "73,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -448,13 +448,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.1!2d-47.8844!3d-15.7914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDQ3JzI5LjAiUyA0N8KwNTMnMDMuOCJX!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "25,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "55,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -470,13 +470,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.1!2d-54.6144!3d-20.4614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDI3JzQxLjAiUyA1NMKwMzYnNTEuOCJX!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "58,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "80,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -492,13 +492,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.1!2d-56.0944!3d-15.5914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDM1JzI5LjAiUyA1NlcwNSc0MC4wIlc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "58,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "90,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -514,13 +514,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.1!2d-49.2544!3d-16.6814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQwJzUzLjQiUyA0OcKwMTUnMTUuOCJX!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "65,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "89,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -536,13 +536,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.1!2d-48.4844!3d-1.4514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMjcnMDUuMCJTIDQ4wrAyOScwMy44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "58,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "120,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -558,13 +558,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.1!2d-60.6744!3d2.8214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwNDknMTcuMCJOIDYwwrA0MCcwMy44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "58,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "204,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -580,13 +580,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.1!2d-51.0644!3d0.0314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMDEnNTIuNCJOIDUxwrAwMyc1MS44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "58,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "195,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -602,13 +602,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.1!2d-60.0244!3d-3.1314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMDcnNTIuNCJTIDYwwrAwMScxNS44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "58,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "80,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -624,13 +624,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3829.1!2d-48.3344!3d-10.2114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDEyJzQxLjAiUyA0OMKwMjAnMDMuOCJX!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "58,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "98,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -646,13 +646,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.1!2d-63.9044!3d-8.7614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwNDUnNDEuMCJTIDYzwrA1NCc1MS44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "58,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "207,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
@@ -668,13 +668,13 @@ export const unitsData: Record<string, UnitData> = {
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.1!2d-67.8144!3d-9.9714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTgnMTcuMCJTIDY3wrA0OCcwMy44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
     plans: {
       basic: {
-        price: DEFAULT_BASIC_PRICE,
+        price: "58,00",
         name: "Endereço Comercial",
         features: DEFAULT_FEATURES_BASIC,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
       },
       premium: {
-        price: DEFAULT_PREMIUM_PRICE,
+        price: "228,00",
         name: "Endereço Fiscal",
         features: DEFAULT_FEATURES_PREMIUM,
         contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
