@@ -224,6 +224,7 @@ export default function BrazilMap({ className, onUnitClick }: BrazilMapProps) {
       return () => window.removeEventListener("resize", handleResize);
     }
   }, [isLoaded, drawChart]);
+  
 
   return (
     <div className={`relative w-full ${className || ""}`}>
