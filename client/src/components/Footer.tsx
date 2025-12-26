@@ -90,12 +90,11 @@ export default function Footer() {
               >
                 Portal de Conteúdo
               </a>
-              <a
-                href="#politica-privacidade"
-                className="text-sm hover:text-green transition-smooth"
-              >
-                Política de Privacidade
-              </a>
+              <Link href="/politica-de-privacidade">
+                <a className="text-sm hover:text-green transition-smooth">
+                  Política de Privacidade
+                </a>
+              </Link>
             </div>
           </div>
 

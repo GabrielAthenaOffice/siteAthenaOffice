@@ -11,6 +11,7 @@ import EscritorioVirtualUnit from "./pages/EscritorioVirtualUnit";
 import PorQueAthena from "./pages/PorQueAthena";
 import FaleConosco from "./pages/FaleConosco";
 import AcaoSocial from "./pages/AcaoSocial";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function Router() {
   return (
@@ -22,6 +23,7 @@ function Router() {
       <Route path="/por-que-athena-office" component={PorQueAthena} />
       <Route path="/fale-conosco" component={FaleConosco} />
       <Route path="/acao-social" component={AcaoSocial} />
+      <Route path="/politica-de-privacidade" component={PrivacyPolicy} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
