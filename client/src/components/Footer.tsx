@@ -43,7 +43,7 @@ export default function Footer() {
               </a>
               <div className="flex gap-3 mt-4">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/company/athenaoffice/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-white/10 hover:bg-green transition-smooth"
@@ -52,7 +52,7 @@ export default function Footer() {
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/athena_office/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-white/10 hover:bg-green transition-smooth"
@@ -61,7 +61,7 @@ export default function Footer() {
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/athenaoffice"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-white/10 hover:bg-green transition-smooth"

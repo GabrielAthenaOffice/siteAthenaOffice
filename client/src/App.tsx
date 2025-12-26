@@ -24,6 +24,7 @@ function Router() {
       <Route path="/fale-conosco" component={FaleConosco} />
       <Route path="/acao-social" component={AcaoSocial} />
       <Route path="/politica-de-privacidade" component={PrivacyPolicy} />
+      <Route path="/termos-de-uso" component={PrivacyPolicy} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
