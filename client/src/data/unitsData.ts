@@ -31,15 +31,12 @@ const DEFAULT_PREMIUM_PRICE = "59,00";
 
 const DEFAULT_FEATURES_BASIC = [
   "Endereço comercial",
-  "Endereço fiscal",
-  "Recebimento de Correspondências",
 ];
 
 const DEFAULT_FEATURES_PREMIUM = [
   "Endereço comercial",
   "Endereço fiscal",
   "Recebimento de Correspondências",
-  "Com ou sem Inscrição Estadual",
 ];
 
 export const unitsData: Record<string, UnitData> = {

@@ -322,6 +322,7 @@ export default function EscritorioVirtualUnit() {
                       <span className="text-3xl font-bold">R${unitData.plans.basic.price}</span>
                       <span className="text-sm opacity-80">Mensal</span>
                     </div>
+                    <div className="h-[1px] w-full bg-white/20 mt-6"></div>
                   </div>
                   
                   <div className="space-y-4 mb-10 flex-grow">
@@ -331,7 +332,6 @@ export default function EscritorioVirtualUnit() {
                         <p className="text-sm font-medium">{feature}</p>
                       </div>
                     ))}
-                    {/* Hardcoded X for basic plan features not included if they are in premium */}
                     <div className="flex items-center gap-3">
                       <X className="w-5 h-5 text-white flex-shrink-0" />
                       <p className="text-sm font-medium">Endereço fiscal</p>
