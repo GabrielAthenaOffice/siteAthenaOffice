@@ -150,16 +150,23 @@ export default function EscritorioVirtualUnit() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="relative"
             >
-              {/* Image Placeholder - Replace src with actual image later */}
               <div className="rounded-2xl overflow-hidden shadow-xl bg-gray-100 aspect-[4/3] flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-20 h-20 rounded-full bg-navy/10 flex items-center justify-center mx-auto mb-4">
-                    <MapPin className="w-10 h-10 text-navy" />
+                {unitData.imageUrl ? (
+                  <img 
+                    src={unitData.imageUrl} 
+                    alt={`Unidade ${unitData.city}`}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="text-center p-8">
+                    <div className="w-20 h-20 rounded-full bg-navy/10 flex items-center justify-center mx-auto mb-4">
+                      <MapPin className="w-10 h-10 text-navy" />
+                    </div>
+                    <p className="text-muted-foreground text-sm">
+                      Imagem da unidade {unitData.city}
+                    </p>
                   </div>
-                  <p className="text-muted-foreground text-sm">
-                    Imagem da unidade {unitData.city}
-                  </p>
-                </div>
+                )}
               </div>
             </motion.div>
           </div>

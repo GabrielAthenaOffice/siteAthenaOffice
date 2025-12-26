@@ -19,6 +19,7 @@ export interface UnitData {
   neighborhood: string;
   address: string;
   mapUrl: string;
+  imageUrl?: string;
   plans: {
     basic: UnitPlan;
     premium: UnitPlan;
@@ -47,6 +48,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Barra da Tijuca",
     address: "Av. Ayrton Senna, Condomínio Mail & Stay Neolink, Barra da Tijuca - RJ - Zona Oeste",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.3!2d-43.3586!3d-22.9897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2f5d7e7d5b%3A0x1234567890abcdef!2sAv.%20Ayrton%20Senna%2C%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/rioDeJaneiro.jpg",
     plans: {
       basic: {
         price: "35,00",
@@ -135,6 +137,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Batel",
     address: "Batel, Curitiba - PR",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.1!2d-49.2844!3d-25.4414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDI2JzI5LjAiUyA0OcKwMTcnMDMuOCJX!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/curitiba.jpg",
     plans: {
       basic: {
         price: "49,00",
@@ -157,6 +160,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Trindade",
     address: "Trindade, Florianópolis - SC",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.1!2d-48.5244!3d-27.5914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDM1JzI5LjAiUyA0OMKwMzEnMjcuOCJX!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/florianopolis.jpg",
     plans: {
       basic: {
         price: "69,00",
@@ -179,6 +183,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Moinhos de Vento",
     address: "Moinhos de Vento, Porto Alegre - RS",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.1!2d-51.2044!3d-30.0314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAxJzUyLjQiUyA1McKwMTInMTUuOCJX!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/portoAlegre.jpg",
     plans: {
       basic: {
         price: "58,00",
@@ -201,6 +206,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "13 de Julho",
     address: "13 de Julho, Aracaju - SE",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.1!2d-37.0544!3d-10.9314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDU1JzUzLjQiUyAzN8KwMDMnMTUuOCJX!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/aracaju.jpg",
     plans: {
       basic: {
         price: "58,00",
@@ -223,6 +229,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Complexo Heron Marinho",
     address: "Complexo Heron Marinho, Campina Grande - PB",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.1!2d-35.8844!3d-7.2214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMTMnMTcuMCJTIDM1wrA1MycwMy44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/campinaGrande.webp",
     plans: {
       basic: {
         price: "58,00",
@@ -267,6 +274,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Piedade",
     address: "Piedade, Jaboatão dos Guararapes - PE",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.1!2d-34.9144!3d-8.1714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMTAnMTcuMCJTIDM0wrA1NCc1MS44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/jaboataoGuararapes.jpg",
     plans: {
       basic: {
         price: "49,00",
@@ -289,6 +297,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Bessa",
     address: "Bessa, João Pessoa - PB",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.1!2d-34.8344!3d-7.0914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDUnMjkuMCJTIDM0wrA1MCcwMy44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/joaoPessoa.png",
     plans: {
       basic: {
         price: "65,00",
@@ -311,6 +320,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Ponta Verde",
     address: "Ponta Verde, Maceió - AL",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.1!2d-35.7044!3d-9.6614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMzknNDEuMCJTIDM1wrA0MicxNS44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/maceio.webp",
     plans: {
       basic: {
         price: "58,00",
@@ -333,6 +343,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Lagoa Nova",
     address: "Lagoa Nova, Natal - RN",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.1!2d-35.2144!3d-5.8214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNDknMTcuMCJTIDM1wrAxMic1MS44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/natal.jpg",
     plans: {
       basic: {
         price: "58,00",
@@ -377,6 +388,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Caminho das Árvores",
     address: "Caminho das Árvores, Salvador - BA",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.1!2d-38.4544!3d-12.9814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzUzLjQiUyAzOMKwMjcnMTUuOCJX!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/salvador.webp",
     plans: {
       basic: {
         price: "25,00",
@@ -399,6 +411,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Cohafuma",
     address: "Cohafuma, São Luís - MA",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.1!2d-44.2544!3d-2.5114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMzAnNDEuMCJTIDQ0wrAxNScxNS44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/saoLuis.jpg",
     plans: {
       basic: {
         price: "58,00",
@@ -421,6 +434,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Fátima",
     address: "Fátima, Teresina - PI",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.1!2d-42.7944!3d-5.0914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMDUnMjkuMCJTIDQywrA0Nyc0MC4wIlc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/teresina.jpeg",
     plans: {
       basic: {
         price: "58,00",
@@ -443,6 +457,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Asa Norte",
     address: "Asa Norte, Brasília - DF",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.1!2d-47.8844!3d-15.7914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDQ3JzI5LjAiUyA0N8KwNTMnMDMuOCJX!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/brasilia.jpg",
     plans: {
       basic: {
         price: "25,00",
@@ -465,6 +480,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Royal Park",
     address: "Royal Park, Campo Grande - MS",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.1!2d-54.6144!3d-20.4614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDI3JzQxLjAiUyA1NMKwMzYnNTEuOCJX!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/campoGrande.jpg",
     plans: {
       basic: {
         price: "58,00",
@@ -487,6 +503,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Duque de Caxias",
     address: "Duque de Caxias, Cuiabá - MT",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.1!2d-56.0944!3d-15.5914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDM1JzI5LjAiUyA1NlcwNSc0MC4wIlc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/cuiaba.jpg",
     plans: {
       basic: {
         price: "58,00",
@@ -509,6 +526,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "St. Oeste",
     address: "St. Oeste, Goiânia - GO",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.1!2d-49.2544!3d-16.6814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQwJzUzLjQiUyA0OcKwMTUnMTUuOCJX!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/goiania.webp",
     plans: {
       basic: {
         price: "65,00",
@@ -531,6 +549,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Batista Campos",
     address: "Batista Campos, Belém - PA",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.1!2d-48.4844!3d-1.4514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMjcnMDUuMCJTIDQ4wrAyOScwMy44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/belem.jpg",
     plans: {
       basic: {
         price: "58,00",
@@ -553,6 +572,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Centro",
     address: "Centro, Boa Vista - RR",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.1!2d-60.6744!3d2.8214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwNDknMTcuMCJOIDYwwrA0MCcwMy44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/boavista.jpg",
     plans: {
       basic: {
         price: "58,00",
@@ -575,6 +595,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Buritizal",
     address: "Buritizal, Macapá - AP",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.1!2d-51.0644!3d0.0314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMDEnNTIuNCJOIDUxwrAwMyc1MS44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/macapa.webp",
     plans: {
       basic: {
         price: "58,00",
@@ -597,6 +618,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "São Francisco",
     address: "São Francisco, Manaus - AM",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.1!2d-60.0244!3d-3.1314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMDcnNTIuNCJTIDYwwrAwMScxNS44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/manaus.webp",
     plans: {
       basic: {
         price: "58,00",
@@ -641,6 +663,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Centro",
     address: "Centro, Porto Velho - RO",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.1!2d-63.9044!3d-8.7614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwNDUnNDEuMCJTIDYzwrA1NCc1MS44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/portoVelho.jpeg",
     plans: {
       basic: {
         price: "58,00",
@@ -663,6 +686,7 @@ export const unitsData: Record<string, UnitData> = {
     neighborhood: "Papouco",
     address: "Papouco, Rio Branco - AC",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.1!2d-67.8144!3d-9.9714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTgnMTcuMCJTIDY3wrA0OCcwMy44Ilc!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr",
+    imageUrl: "/images/unidades/rioBranco.jpeg",
     plans: {
       basic: {
         price: "58,00",
