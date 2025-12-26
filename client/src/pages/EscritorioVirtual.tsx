@@ -14,14 +14,44 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 
+import { unitsData } from "@/data/unitsData";
+
 interface Unit {
   neighborhood: string;
   city: string;
 }
 
-// Map of cities to their URL slugs (only implemented pages)
+// Map of cities to their URL slugs
 const citySlugMap: Record<string, string> = {
   "Rio de Janeiro": "rio-de-janeiro",
+  "São Paulo": "sao-paulo",
+  "Belo Horizonte": "belo-horizonte",
+  "Vitória": "vitoria",
+  "Curitiba": "curitiba",
+  "Florianópolis": "florianopolis",
+  "Porto Alegre": "porto-alegre",
+  "Aracaju": "aracaju",
+  "Campina Grande": "campina-grande",
+  "Fortaleza": "fortaleza",
+  "Jaboatão dos Guararapes": "jaboatao",
+  "João Pessoa": "joao-pessoa",
+  "Maceió": "maceio",
+  "Natal": "natal",
+  "Recife": "recife",
+  "Salvador": "salvador",
+  "São Luís": "sao-luis",
+  "Teresina": "teresina",
+  "Brasília": "brasilia",
+  "Campo Grande": "campo-grande",
+  "Cuiabá": "cuiaba",
+  "Goiânia": "goiania",
+  "Belém": "belem",
+  "Boa Vista": "boa-vista",
+  "Macapá": "macapa",
+  "Manaus": "manaus",
+  "Palmas": "palmas",
+  "Porto Velho": "porto-velho",
+  "Rio Branco": "rio-branco",
 };
 
 export default function EscritorioVirtual() {
@@ -88,36 +118,50 @@ export default function EscritorioVirtual() {
     }
   };
 
-  const UnitCard = ({ unit }: { unit: Unit }) => (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.4 }}
-    >
-      <Card className="h-full hover:shadow-lg transition-smooth border-2 hover:border-green">
-        <CardContent className="p-6">
-          <div className="flex items-start gap-3 mb-4">
-            <div className="w-10 h-10 rounded-full bg-navy/10 flex items-center justify-center flex-shrink-0">
-              <MapPin className="w-5 h-5 text-navy" />
+  const UnitCard = ({ unit }: { unit: Unit }) => {
+    const slug = citySlugMap[unit.city];
+    const unitData = slug ? unitsData[slug] : null;
+    const price = unitData?.plans.basic.price || "35,00";
+
+    return (
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.4 }}
+      >
+        <Card className="h-full hover:shadow-lg transition-smooth border-2 hover:border-green">
+          <CardContent className="p-6">
+            <div className="flex items-start gap-3 mb-4">
+              <div className="w-10 h-10 rounded-full bg-navy/10 flex items-center justify-center flex-shrink-0">
+                <MapPin className="w-5 h-5 text-navy" />
+              </div>
+              <div>
+                <p className="text-sm text-muted-foreground">{unit.neighborhood}</p>
+                <h3 className="text-xl font-bold text-navy" style={{ fontFamily: 'Montserrat' }}>
+                  {unit.city}
+                </h3>
+              </div>
             </div>
-            <div>
-              <p className="text-sm text-muted-foreground">{unit.neighborhood}</p>
-              <h3 className="text-xl font-bold text-navy" style={{ fontFamily: 'Montserrat' }}>
-                {unit.city}
-              </h3>
+            
+            <div className="mb-6">
+              <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Planos a partir de</p>
+              <p className="text-2xl font-bold text-navy" style={{ fontFamily: 'Montserrat' }}>
+                R${price}<span className="text-sm font-normal text-muted-foreground">/mês</span>
+              </p>
             </div>
-          </div>
-          <Button 
-            onClick={() => handleViewPlans(unit)}
-            className="w-full bg-navy hover:bg-navy/90 text-white font-semibold"
-          >
-            VER PLANOS
-          </Button>
-        </CardContent>
-      </Card>
-    </motion.div>
-  );
+
+            <Button 
+              onClick={() => handleViewPlans(unit)}
+              className="w-full bg-navy hover:bg-navy/90 text-white font-semibold"
+            >
+              VER PLANOS
+            </Button>
+          </CardContent>
+        </Card>
+      </motion.div>
+    );
+  };
 
   return (
     <div className="min-h-screen">

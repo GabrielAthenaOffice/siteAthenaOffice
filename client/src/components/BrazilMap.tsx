@@ -96,7 +96,8 @@ export default function BrazilMap({ className, onUnitClick }: BrazilMapProps) {
       if (onUnitClick) {
         onUnitClick(stateUnits[0]);
       } else {
-        navigate("/escritorio-virtual");
+        // Navigate to the specific unit page
+        navigate(`/escritorio-virtual/${stateUnits[0].id}`);
       }
     }
   }, [onUnitClick, navigate]);

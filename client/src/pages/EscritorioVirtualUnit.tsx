@@ -1,45 +1,18 @@
 /*
   Design: Modernismo Corporativo Brasileiro
-  Página: Escritório Virtual - Rio de Janeiro (Barra da Tijuca)
+  Página: Escritório Virtual - Unidade Dinâmica
 */
 
 import { motion } from "framer-motion";
-import { Check, MapPin, FileText, Building2, Mail, CreditCard, Send, Signature, Clock, X } from "lucide-react";
+import { Check, MapPin, FileText, Mail, CreditCard, Send, Signature, Clock, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-
-const unitData = {
-  city: "Rio de Janeiro",
-  state: "RJ",
-  neighborhood: "Barra da Tijuca",
-  address: "Av. Ayrton Senna, Condomínio Mail & Stay Neolink, Barra da Tijuca - RJ - Zona Oeste",
-  plans: {
-    basic: {
-      price: "35,00",
-      name: "Endereço Comercial",
-      features: [
-        "Endereço comercial",
-        "Endereço fiscal",
-        "Recebimento de Correspondências",
-      ],
-      contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=369885a933470525b48208a1f3f2acbc/",
-    },
-    premium: {
-      price: "59,00",
-      name: "Endereço Fiscal",
-      features: [
-        "Endereço comercial",
-        "Endereço fiscal",
-        "Recebimento de Correspondências",
-        "Com ou sem Inscrição Estadual",
-      ],
-      contractUrl: "https://athena.conexa.app/index.php?r=contratacaoOnline&token=2e666ab0bca32657cd9d928eb2f059c5/",
-    },
-  },
-};
+import { useParams, useLocation } from "wouter";
+import { unitsData } from "@/data/unitsData";
+import NotFound from "./NotFound";
 
 const differentials = [
   "18 anos no mercado",
@@ -91,7 +64,15 @@ const contractingSteps = [
   },
 ];
 
-export default function EscritorioVirtualRJ() {
+export default function EscritorioVirtualUnit() {
+  const params = useParams();
+  const slug = params.slug;
+  const unitData = slug ? unitsData[slug] : null;
+
+  if (!unitData) {
+    return <NotFound />;
+  }
+
   return (
     <div className="min-h-screen">
       <SEO
@@ -216,7 +197,7 @@ export default function EscritorioVirtualRJ() {
             >
               <div className="rounded-2xl overflow-hidden shadow-lg border-4 border-white">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.3!2d-43.3586!3d-22.9897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2f5d7e7d5b%3A0x1234567890abcdef!2sAv.%20Ayrton%20Senna%2C%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1703300000000!5m2!1spt-BR!2sbr"
+                  src={unitData.mapUrl}
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
@@ -335,7 +316,7 @@ export default function EscritorioVirtualRJ() {
                 <CardContent className="p-10 flex flex-col h-full">
                   <div className="mb-8">
                     <h3 className="text-4xl font-bold mb-2" style={{ fontFamily: 'Montserrat' }}>
-                      Endereço Comercial
+                      {unitData.plans.basic.name}
                     </h3>
                     <div className="flex items-baseline gap-2">
                       <span className="text-3xl font-bold">R${unitData.plans.basic.price}</span>
@@ -344,10 +325,13 @@ export default function EscritorioVirtualRJ() {
                   </div>
                   
                   <div className="space-y-4 mb-10 flex-grow">
-                    <div className="flex items-center gap-3">
-                      <Check className="w-5 h-5 text-white flex-shrink-0" />
-                      <p className="text-sm font-medium">Endereço comercial</p>
-                    </div>
+                    {unitData.plans.basic.features.map((feature, index) => (
+                      <div key={index} className="flex items-center gap-3">
+                        <Check className="w-5 h-5 text-white flex-shrink-0" />
+                        <p className="text-sm font-medium">{feature}</p>
+                      </div>
+                    ))}
+                    {/* Hardcoded X for basic plan features not included if they are in premium */}
                     <div className="flex items-center gap-3">
                       <X className="w-5 h-5 text-white flex-shrink-0" />
                       <p className="text-sm font-medium">Endereço fiscal</p>
@@ -360,7 +344,7 @@ export default function EscritorioVirtualRJ() {
 
                   <a href={unitData.plans.basic.contractUrl} target="_blank" rel="noopener noreferrer" className="mt-auto">
                     <Button className="w-full bg-white text-[#1a1b41] hover:bg-gray-100 font-bold py-6 rounded-lg text-xs uppercase tracking-wider">
-                      CONTRATAR ENDEREÇO COMERCIAL
+                      CONTRATAR {unitData.plans.basic.name.toUpperCase()}
                     </Button>
                   </a>
                 </CardContent>
@@ -378,7 +362,7 @@ export default function EscritorioVirtualRJ() {
                 <CardContent className="p-10 flex flex-col h-full">
                   <div className="mb-8">
                     <h3 className="text-4xl font-bold mb-2" style={{ fontFamily: 'Montserrat' }}>
-                      Endereço Fiscal
+                      {unitData.plans.premium.name}
                     </h3>
                     <div className="flex items-baseline gap-2">
                       <span className="text-3xl font-bold">R${unitData.plans.premium.price}</span>
@@ -388,27 +372,17 @@ export default function EscritorioVirtualRJ() {
                   </div>
                   
                   <div className="space-y-4 mb-10 flex-grow">
-                    <div className="flex items-center gap-3">
-                      <Check className="w-5 h-5 text-navy flex-shrink-0" />
-                      <p className="text-sm font-medium">Endereço comercial</p>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Check className="w-5 h-5 text-navy flex-shrink-0" />
-                      <p className="text-sm font-medium">Endereço fiscal</p>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Check className="w-5 h-5 text-navy flex-shrink-0" />
-                      <p className="text-sm font-medium">Recebimento de Correspondências</p>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Check className="w-5 h-5 text-navy flex-shrink-0" />
-                      <p className="text-sm font-medium">Com ou sem Inscrição Estadual</p>
-                    </div>
+                    {unitData.plans.premium.features.map((feature, index) => (
+                      <div key={index} className="flex items-center gap-3">
+                        <Check className="w-5 h-5 text-navy flex-shrink-0" />
+                        <p className="text-sm font-medium">{feature}</p>
+                      </div>
+                    ))}
                   </div>
 
                   <a href={unitData.plans.premium.contractUrl} target="_blank" rel="noopener noreferrer" className="mt-auto">
                     <Button className="w-full bg-[#1a1b41] text-white hover:bg-[#1a1b41]/90 font-bold py-6 rounded-lg text-xs uppercase tracking-wider">
-                      CONTRATAR ENDEREÇO FISCAL
+                      CONTRATAR {unitData.plans.premium.name.toUpperCase()}
                     </Button>
                   </a>
                 </CardContent>
